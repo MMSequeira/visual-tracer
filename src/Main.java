@@ -1,38 +1,31 @@
 
-
-
 public class Main {
-		
-	enum Test
-	{
-		SingleThread, // - Test single thread execution
-		MultiThread   // - Test multi thread execution
-	}
-	
-	public static void main(String[] args) throws InterruptedException
-	{				
-		//choose here the test
-		Test testOption = Test.MultiThread;
-		
-		if(testOption.equals(Test.SingleThread))
-		{
-			Pessoa pai = new Pessoa("Utilizador Pai", "Xpto Pai", 50, null);		
-			Pessoa pessoa = new Pessoa("Utilizador", "Xpto", 21, pai);
-			pessoa.setIdade(22);
-			pai.setIdade(100);	
-		}
-		else if(testOption.equals(Test.MultiThread))
-		{
-			Mesa mesa = new Mesa();
-			Cozinheiro poe =   new Cozinheiro(mesa,1);
-			Glutão tira = new Glutão(mesa,1);
-			poe.start();
-			tira.start();
-			
-			new Cozinheiro(mesa,2).start();
-			new Cozinheiro(mesa,3).start();
-			new Glutão(mesa,2).start();
-			new Glutão(mesa,3).start();
-		}
-	}
+
+    enum Test {
+        SingleThread, // - Test single thread execution
+        MultiThread   // - Test multi thread execution
+    }
+
+    public static void main(final String[] arguments) throws InterruptedException {
+        // Choose the test here:
+        Test testOption = Test.MultiThread;
+
+        if (testOption.equals(Test.SingleThread)) {
+            final Person parent = new Person("John", "Doe", 50, null);
+            final Person person = new Person("John", "Doe Jr.", 21, parent);
+            person.setAge(22);
+            parent.setAge(100);
+        } else if (testOption.equals(Test.MultiThread)) {
+            Table table = new Table();
+            Cook server = new Cook(table, 1);
+            Glutton served = new Glutton(table, 1);
+            server.start();
+            served.start();
+
+            new Cook(table, 2).start();
+            new Cook(table, 3).start();
+            new Glutton(table, 2).start();
+            new Glutton(table, 3).start();
+        }
+    }
 }
