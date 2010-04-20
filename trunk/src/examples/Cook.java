@@ -15,7 +15,6 @@ public class Cook extends Thread {
             try {
                 table.put();
             } catch (final InterruptedException exception) {
-                // TODO Auto-generated catch block
                 exception.printStackTrace();
             }
         }
