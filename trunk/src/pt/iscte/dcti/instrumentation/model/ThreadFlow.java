@@ -91,9 +91,10 @@ public class ThreadFlow {
 	}
 
 
-	private void setStackAbstractJoinPoint(Stack<AbstractJoinPoint> _stackAbstractJoinPoint) {
-		this._stackAbstractJoinPoint = _stackAbstractJoinPoint;
-	}
+	// TODO Check why this method was defined here --mms
+//	private void setStackAbstractJoinPoint(Stack<AbstractJoinPoint> _stackAbstractJoinPoint) {
+//		this._stackAbstractJoinPoint = _stackAbstractJoinPoint;
+//	}
 
 
 	private Stack<AbstractJoinPoint> getStackAbstractJoinPoint() {

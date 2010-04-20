@@ -204,9 +204,10 @@ public class TraceView extends Composite {
 		return _controller;
 	}
 
-	private void setHashAbstractJoinPoints(HashMap<AbstractJoinPoint, TreeItem> _hashAbstractJoinPoints) {
-		this._hashAbstractJoinPoints = _hashAbstractJoinPoints;
-	}
+    // TODO Check why this method was defined here. --mms
+//	private void setHashAbstractJoinPoints(HashMap<AbstractJoinPoint, TreeItem> _hashAbstractJoinPoints) {
+//		this._hashAbstractJoinPoints = _hashAbstractJoinPoints;
+//	}
 
 	private HashMap<AbstractJoinPoint, TreeItem> getHashAbstractJoinPoints() {
 		return _hashAbstractJoinPoints;

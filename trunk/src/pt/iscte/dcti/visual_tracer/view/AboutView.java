@@ -33,7 +33,7 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
 import pt.iscte.dcti.visual_tracer.utils.FileUtils;
-import pt.iscte.dcti.visual_tracer.view.ImageUtils.ImageName;
+//import pt.iscte.dcti.visual_tracer.view.ImageUtils.ImageName;
 
 
 public class AboutView extends Dialog {
