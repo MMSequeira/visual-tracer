@@ -420,9 +420,10 @@ public class PrincipalView  implements IView, IObserver{
 			_lblTime.setText("paused");
 	}
 
-	private void setHashtTreadFlow(HashMap<ThreadFlow, TraceView> _hashtTreadFlow) {
-		this._hashtTreadFlow = _hashtTreadFlow;
-	}
+	// TODO Check why this method was defined here. --mms
+//	private void setHashtTreadFlow(HashMap<ThreadFlow, TraceView> _hashtTreadFlow) {
+//		this._hashtTreadFlow = _hashtTreadFlow;
+//	}
 
 	private HashMap<ThreadFlow, TraceView> getHashtTreadFlow() {
 		return _hashtTreadFlow;

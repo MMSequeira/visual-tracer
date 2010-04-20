@@ -36,7 +36,7 @@ import pt.iscte.dcti.instrumentation.model.Field;
 import pt.iscte.dcti.instrumentation.model.MyWeakReference;
 import pt.iscte.dcti.instrumentation.model.Snapshot;
 import pt.iscte.dcti.visual_tracer.controller.IController;
-import pt.iscte.dcti.visual_tracer.view.ImageUtils.ImageName;
+//import pt.iscte.dcti.visual_tracer.view.ImageUtils.ImageName;
 
 public class DetailTraceView extends Composite {
 

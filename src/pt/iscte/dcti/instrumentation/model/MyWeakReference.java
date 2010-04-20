@@ -48,7 +48,7 @@ public class MyWeakReference {
         }
         else
         {
-        	//TODO: verificar se � necess�rio criar MyWeakReference para Objectos nulos
+        	//TODO Check whether it is necessary to create MyWeakReference for null objects
             return _historyOfMyWeakReferences.get(indexOfObject);
         }
     }

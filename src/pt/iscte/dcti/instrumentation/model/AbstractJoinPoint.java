@@ -126,11 +126,12 @@ public abstract class AbstractJoinPoint {
 	public ThreadFlow getThreadFlow() {
 		return _threadFlow;
 	}
-	
-	private void addArgument(Argument argument)
-	{
-		getArguments().add(argument);
-	}
+
+	// TODO Check why this method was defined here. --mms
+//	private void addArgument(Argument argument)
+//	{
+//		getArguments().add(argument);
+//	}
 	
 	public Vector<Argument> getArguments()
 	{

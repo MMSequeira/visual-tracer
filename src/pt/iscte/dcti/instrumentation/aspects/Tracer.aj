@@ -21,7 +21,7 @@ package pt.iscte.dcti.instrumentation.aspects;
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import static java.lang.System.out;
+//import static java.lang.System.out;
 import java.lang.reflect.Field;
 import java.sql.Timestamp;
 import org.aspectj.lang.JoinPoint;
