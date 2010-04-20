@@ -15,7 +15,6 @@ public class Glutton extends Thread {
             try {
                 table.take();
             } catch (final InterruptedException exception) {
-                // TODO Auto-generated catch block
                 exception.printStackTrace();
             }
         }

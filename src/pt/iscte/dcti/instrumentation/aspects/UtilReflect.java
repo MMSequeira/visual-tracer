@@ -52,7 +52,7 @@ public class UtilReflect {
 			try {
 				fields = Class.forName(fullClassName).getDeclaredFields().clone();
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
+				// TODO This seems like a really bad idea! --mms
 				e.printStackTrace();
 			}
 		return fields;		
@@ -66,7 +66,7 @@ public class UtilReflect {
 			try {
 				fields = clazz.getDeclaredFields().clone();
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
+                // TODO This seems like a really bad idea! --mms
 				e.printStackTrace();
 			}
 		return fields;		
