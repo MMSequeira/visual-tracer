@@ -25,11 +25,10 @@ import pt.iscte.dcti.instrumentation.model.AbstractJoinPoint;
 import pt.iscte.dcti.instrumentation.model.IModel;
 import pt.iscte.dcti.instrumentation.model.ThreadFlow;
 
-public interface ISubject {
-	public void registerObserver(IObserver observer);
-	public void removeObsserver(IObserver observer);
-	public void notifyThreadFlowAdded(ThreadFlow threadFlow);
-	public void notifyAbstractJoinPointAdded(AbstractJoinPoint abstractJoinPoint);
-	public void notifyTimeChanged(int time);
-	public void notifyStatusChanged(IModel.Status status);
+public interface Observer {
+	
+	public void threadFlowAdded(ThreadFlow threadFlow);
+	public void abstractJoinPointAdded(AbstractJoinPoint abstractJoinPoint);
+	public void timeChanged(int time);
+	public void statusChanged(IModel.Status status);
 }

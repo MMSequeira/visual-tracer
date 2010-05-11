@@ -30,20 +30,20 @@ import pt.iscte.dcti.instrumentation.model.SintaticStructure;
 import pt.iscte.dcti.instrumentation.model.Snapshot;
 import pt.iscte.dcti.instrumentation.model.ThreadFlow;
 import pt.iscte.dcti.instrumentation.model.IModel.Status;
-import pt.iscte.dcti.visual_tracer.patterns.IObserver;
-import pt.iscte.dcti.visual_tracer.view.IView;
+import pt.iscte.dcti.visual_tracer.patterns.Observer;
+import pt.iscte.dcti.visual_tracer.view.View;
 import pt.iscte.dcti.visual_tracer.view.PrincipalView;
 
 public class Controller implements IController {
 
-	private IView _view;
+	private View _view;
 	private IModel _model;
 	
 	public Controller(IModel model)
 	{
 		setModel(model);
 		setView(new PrincipalView(this));
-		getModel().registerObserver((IObserver) getView());
+		getModel().registerObserver((Observer) getView());
 	}
 	
 	public Instance getInstance(MyWeakReference ref)
@@ -112,11 +112,11 @@ public class Controller implements IController {
 		return _model;
 	}
 
-	private void setView(IView _view) {
+	private void setView(View _view) {
 		this._view = _view;
 	}
 
-	private IView getView() {
+	private View getView() {
 		return _view;
 	}
 

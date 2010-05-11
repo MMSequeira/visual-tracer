@@ -1,8 +1,8 @@
 package pt.iscte.dcti.instrumentation.model;
 import java.util.Vector;
 
-import pt.iscte.dcti.visual_tracer.patterns.IObserver;
-import pt.iscte.dcti.visual_tracer.patterns.ISubject;
+import pt.iscte.dcti.visual_tracer.patterns.Observer;
+import pt.iscte.dcti.visual_tracer.patterns.Subject;
 
 /**
  * Visual Tracer - An Application of Java Code Instrumentation using AspectJ 
@@ -30,9 +30,9 @@ import pt.iscte.dcti.visual_tracer.patterns.ISubject;
  * @version 1.0
  * @created 06-Nov-2009 15:52:06
  */
-public abstract class IModel implements ISubject {
+public abstract class IModel implements Subject {
 
-	private Vector<IObserver> _observers  = new Vector<IObserver>();
+	private Vector<Observer> _observers  = new Vector<Observer>();
 	
 	public enum Status
 	{
@@ -46,33 +46,33 @@ public abstract class IModel implements ISubject {
 	}	
 	
 	@Override
-	public void registerObserver(IObserver observer) {
+	public void registerObserver(Observer observer) {
 		this.getObservers().add(observer);		
 	}
 
 	@Override
-	public void removeObsserver(IObserver observer) {
+	public void removeObsserver(Observer observer) {
 		this.getObservers().remove(observer);
 	}
 	
 	@Override
 	public void notifyThreadFlowAdded(ThreadFlow threadFlow) {
 		if(!getStatus().equals(Status.UserExit))
-			for (IObserver observer : getObservers())
+			for (Observer observer : getObservers())
 				observer.threadFlowAdded(threadFlow);		
 	}
 	
 	@Override
 	public void notifyAbstractJoinPointAdded(AbstractJoinPoint abstractJoinPoint) {
 		if(!getStatus().equals(Status.UserExit))
-			for (IObserver observer : getObservers())
+			for (Observer observer : getObservers())
 				observer.abstractJoinPointAdded(abstractJoinPoint);			
 	}
 	
 	@Override
 	public void notifyTimeChanged(int time)
 	{
-		for (IObserver observer : getObservers())
+		for (Observer observer : getObservers())
 			observer.timeChanged(time);		
 	}
 	
@@ -82,11 +82,11 @@ public abstract class IModel implements ISubject {
 	 */
 	public void notifyStatusChanged(IModel.Status status)
 	{		
-		for (IObserver observer : getObservers())
+		for (Observer observer : getObservers())
 			observer.statusChanged(status);
 	}
 	
-	private Vector<IObserver> getObservers() {
+	private Vector<Observer> getObservers() {
 		return _observers;
 	}
 	

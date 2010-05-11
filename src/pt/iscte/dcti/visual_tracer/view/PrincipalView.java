@@ -60,9 +60,9 @@ import pt.iscte.dcti.instrumentation.model.Snapshot;
 import pt.iscte.dcti.instrumentation.model.ThreadFlow;
 import pt.iscte.dcti.instrumentation.model.IModel.Status;
 import pt.iscte.dcti.visual_tracer.controller.IController;
-import pt.iscte.dcti.visual_tracer.patterns.IObserver;
+import pt.iscte.dcti.visual_tracer.patterns.Observer;
 
-public class PrincipalView  implements IView, IObserver{
+public class PrincipalView  implements View, Observer{
 
 	private Shell _shell;
 	private Display _display;

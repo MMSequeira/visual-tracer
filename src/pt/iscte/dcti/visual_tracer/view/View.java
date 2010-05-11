@@ -25,7 +25,7 @@ import pt.iscte.dcti.instrumentation.model.AbstractJoinPoint;
 import pt.iscte.dcti.instrumentation.model.Instance;
 import pt.iscte.dcti.instrumentation.model.Snapshot;
 
-public interface IView {
+public interface View {
 
 	/**
 	 * Shows the interface to the user.
