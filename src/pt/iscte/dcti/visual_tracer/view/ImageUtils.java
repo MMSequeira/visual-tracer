@@ -70,12 +70,13 @@ public class ImageUtils {
 		MethodExecution
 	}
 	
+    // TODO Fix documentation.
 	/**
 	 * Retrieves the image corresponding to the given file name.
 	 * Note that the image is managed by an image registry. You should not
 	 * dispose the image after use.
-	 * @param shortFileName
-	 * @return
+	 * #param shortFileName
+	 * @return What?
 	 */
 	public static Image getImage(String imageName) {
 		Image image = null;		

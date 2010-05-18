@@ -76,12 +76,13 @@ public class FileUtils
 		return new File(directory+fileName).exists();
 	}
 	
+    // TODO Fix documentation.
 	/**
 	 * Create a file with name and extension based on file argument in a directory and with a content
 	 * @param content - content that file may contain
 	 * @param directory - directory to save the file in
 	 * @param file - the name and extension of the file
-	 * @return
+	 * @return What?
 	 */
 	public static boolean createFile(String content,String directory,String file,boolean append)
 	{
@@ -108,12 +109,13 @@ public class FileUtils
 	}
 	
 	
+    // TODO Fix documentation.
 	/**
 	 * Create a file with name and extension based on file argument in a directory and with a content
-	 * @param content - content that file may contain
-	 * @param directory - directory to save the file in
+	 * #param content - content that file may contain
+	 * #param directory - directory to save the file in
 	 * @param file - the name and extension of the file
-	 * @return
+	 * @return What?
 	 * @throws IOException 
 	 */
 	public static String getTextFile(File file) throws IOException
@@ -126,12 +128,13 @@ public class FileUtils
     	return stringReader;
 	}
 	
+    // TODO Fix documentation.
 	/**
 	 * Create a file with name and extension based on file argument in a directory and with a content
 	 * @param content - content that file may contain
-	 * @param directory - directory to save the file in
+	 * #param directory - directory to save the file in
 	 * @param file - the name and extension of the file
-	 * @return
+	 * @return What?
 	 * @throws IOException 
 	 */
 	public static boolean saveTextFile(String content,File file,boolean append) throws IOException
@@ -143,11 +146,12 @@ public class FileUtils
 		return response;
 	}
 	
+    // TODO Fix documentation.
 	/**
 	 * Validate if this string have final slash
 	 * e.g. C:\folder\ or C:\folder/
 	 * @param directory
-	 * @return
+	 * @return What?
 	 */
 	public static String getDirectoryWithSlash(String directory)
 	{

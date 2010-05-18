@@ -81,7 +81,7 @@ public interface IController {
 	
 	/**
 	 * Asks the model to add a new thread flow to the list of thread flows.
-	 * @param thread flow to add
+	 * @param threadFlow thread flow to add
 	 */
 	public void addThreadFlow(ThreadFlow threadFlow);
 	
