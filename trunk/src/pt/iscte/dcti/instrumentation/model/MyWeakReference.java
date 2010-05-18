@@ -92,8 +92,9 @@ public class MyWeakReference {
         return _weakReference.get();
     }
 
+    // TODO Fix documentation.
     /**
-     * @param weakReference the _weakReference to set
+     * #param weakReference the _weakReference to set
      */
     public void setWeakReference(Object object) {
         this._weakReference = new WeakReference<Object>(object);

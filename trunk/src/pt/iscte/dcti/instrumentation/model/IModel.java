@@ -76,9 +76,10 @@ public abstract class IModel implements Subject {
 			observer.timeChanged(time);		
 	}
 	
+    // TODO Fix documentation.
 	/**
 	 * Asks the observer to notify the subscribed views that the status changed.
-	 * @param execution status set
+	 * #param execution status set
 	 */
 	public void notifyStatusChanged(IModel.Status status)
 	{		
