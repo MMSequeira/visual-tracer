@@ -1,7 +1,7 @@
 package examples;
 
 public class Main {
-
+ 
     enum Test {
         SingleThread, // - Test single thread execution
         MultiThread   // - Test multi thread execution
