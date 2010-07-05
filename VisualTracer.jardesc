@@ -17,6 +17,7 @@
         <folder path="/visual-tracer/manuals"/>
         <javaElement handleIdentifier="=visual-tracer/src&lt;pt.iscte.dcti.instrumentation.aspects"/>
         <javaElement handleIdentifier="=visual-tracer/src&lt;pt.iscte.dcti.visual_tracer.patterns"/>
+        <folder path="/visual-tracer/.settings"/>
         <folder path="/visual-tracer/Templates"/>
         <javaElement handleIdentifier="=visual-tracer/src&lt;pt.iscte.dcti.visual_tracer.controller"/>
         <javaElement handleIdentifier="=visual-tracer/src&lt;pt.iscte.dcti.visual_tracer.view"/>
