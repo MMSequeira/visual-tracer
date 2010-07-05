@@ -51,8 +51,6 @@ import pt.iscte.dcti.visual_tracer.controller.Controller;
 import pt.iscte.dcti.visual_tracer.controller.IController;
 
 
-
-
 public abstract aspect AbstractTracer {
 	
 	private boolean _firstExecution = true;
