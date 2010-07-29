@@ -51,6 +51,8 @@ public class Instance {
 		return getSnapshotsCount() > 0 ? getSnapshots().lastElement() : null;
 	}
 
+    // TODO Check how to solve this problem without suppressing the warning.
+    @SuppressWarnings("unchecked")
 	public Vector<Snapshot> getSnapshots() {
 		return (Vector<Snapshot>)_snapshot.clone();
 	}
