@@ -538,7 +538,8 @@ public abstract aspect AbstractTracer {
 		return response;
 	}
 	
-	public JoinPointContextInformation getContextInformation(JoinPoint.StaticPart joinPointInfo)
+	@SuppressWarnings("deprecation")
+    public JoinPointContextInformation getContextInformation(JoinPoint.StaticPart joinPointInfo)
 	{
 		return  new JoinPointContextInformation(joinPointInfo.getSourceLocation().getFileName(), joinPointInfo.getSourceLocation().getColumn(), joinPointInfo.getSourceLocation().getLine(), joinPointInfo.getSignature().toString(), joinPointInfo.getKind());
 	}	
@@ -558,9 +559,9 @@ public abstract aspect AbstractTracer {
 		return new Event(snapShotTarget,snapShotThis, new Timestamp(System.currentTimeMillis()), System.nanoTime());
 	}
 
-	private void setController(IController _controller) {
-		this._controller = _controller;
-	}
+//	private void setController(IController _controller) {
+//		this._controller = _controller;
+//	}
 
 	private IController getController() {
 		return _controller;
