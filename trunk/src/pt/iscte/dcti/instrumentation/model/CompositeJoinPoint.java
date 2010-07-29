@@ -49,6 +49,8 @@ public class CompositeJoinPoint extends AbstractJoinPoint {
 		return _abstractJoinPoints;
 	}
 
+    // TODO Check how to solve this problem without suppressing the warning.
+    @SuppressWarnings("unchecked")
 	@Override
 	public Vector<AbstractJoinPoint> getChilds() {
 		return (Vector<AbstractJoinPoint>) _abstractJoinPoints.clone();

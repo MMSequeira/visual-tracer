@@ -133,7 +133,9 @@ public abstract class AbstractJoinPoint {
 //		getArguments().add(argument);
 //	}
 	
-	public Vector<Argument> getArguments()
+    // TODO Check how to solve this problem without suppressing the warning.
+	@SuppressWarnings("unchecked")
+    public Vector<Argument> getArguments()
 	{
 		return (Vector<Argument>) _arguments.clone();
 	}
